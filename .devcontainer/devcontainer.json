@@ -5,15 +5,6 @@
   },
   "hostRequirements": {
     "cpus": 2
-<<<<<<< HEAD
-=======
-  },
-  "waitFor": "onCreateCommand",
-  "updateContentCommand": "cargo build",
-  "postCreateCommand": "",
-  "postAttachCommand": {
-    "server": "cargo run"
->>>>>>> b8bb7a5ddaa85e767fe1bd852512c5148bdb8a0c
   },
   "portsAttributes": {
     "8888": {
