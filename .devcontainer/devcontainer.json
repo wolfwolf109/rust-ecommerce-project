@@ -4,13 +4,7 @@
     "ghcr.io/devcontainers/features/rust:1": {}
   },
   "hostRequirements": {
-    "cpus": 4
-  },
-  "waitFor": "onCreateCommand",
-  "updateContentCommand": "cargo build",
-  "postCreateCommand": "",
-  "postAttachCommand": {
-    "server": "cargo run"
+    "cpus": 2
   },
   "portsAttributes": {
     "8888": {
@@ -19,12 +13,6 @@
     }
   },
   "customizations": {
-    "codespaces": {
-      "openFiles": [
-        "src/main.rs",
-        "templates/index.html"
-      ]
-    },
     "vscode": {
       "extensions": [
         "rust-lang.rust-analyzer"
