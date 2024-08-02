@@ -12,8 +12,7 @@ Cargo.lock
 
 
 # Added by cargo
-
 /target
 
 # Built files
-**/dist
+dist/
