@@ -8,5 +8,5 @@ publish = false
 [dependencies]
 rocket = "0.5.1"
 diesel = { version = "2.2.0", features = ["postgres", "chrono"] }
-dotenvy = "0.15"
+dotenv = "0.15"
 chrono = "0.4"

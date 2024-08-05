@@ -1,6 +1,6 @@
 use diesel::pg::PgConnection;
 use diesel::prelude::*;
-use dotenvy::dotenv;
+use dotenv::dotenv;
 use core::panic;
 use std::env;
 
