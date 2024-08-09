@@ -1,9 +1,8 @@
 use std::io::{stdin, Read};
 use backend::*;
 
-pub mod hash_password;
 
-fn create_user() {
+fn main() {
     let connection = &mut establish_connection();
 
     let mut user_type = String::new();
@@ -27,7 +26,9 @@ fn create_user() {
     stdin().read_line(&mut password).unwrap();
     let password = password.trim_end();
 
-    let password_hash = hash_password::hash_password(password);
+    let password_hash = hash_password(password);
 
+    let user = create_user(connection, user_type, username, email, &password_hash);
+    println!("\nCreated User {} with id {}", username, user.id)
 
 }
