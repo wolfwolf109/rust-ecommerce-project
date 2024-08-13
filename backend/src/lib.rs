@@ -1,7 +1,6 @@
 use diesel::pg::PgConnection;
 use diesel::prelude::*;
 use dotenv::dotenv;
-use rocket::http::hyper::server::conn;
 use core::panic;
 use std::env;
 use self::models::{NewUser, User};

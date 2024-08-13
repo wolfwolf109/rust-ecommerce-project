@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: .
+    ports:
+      - "7000:7000"
+    depends_on:
+      - db
+    environment:
+      - DATABASE_URL=postgres://postgres:63281818Ly*=@db:5432/ecommerce
+      - RUST_LOG=debug
+
+  db:
+    image: postgres:latest
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 63281818Ly*=
+      POSTGRES_DB: ecommerce
+    ports:
+      - "5432:5432"

@@ -1,7 +1,6 @@
 [package]
 name = "backend"
 version = "0.0.0"
-workspace = "../"
 edition = "2021"
 publish = false
 default-run = "backend"

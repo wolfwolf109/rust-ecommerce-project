@@ -1,5 +1,5 @@
 use self::models::*;
-use diesel::{connection, prelude::*};
+use diesel::prelude::*;
 use backend::*;
 
 fn main() {

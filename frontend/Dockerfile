@@ -5,7 +5,7 @@ FROM rust:latest AS builder
 RUN cargo install wasm-pack
 
 # Set the working directory inside the container
-WORKDIR /usr/src/app
+WORKDIR /usr/src/app/frontend
 
 # Copy the Cargo.toml and Cargo.lock files
 COPY Cargo.toml Cargo.lock ./
